@@ -97,7 +97,20 @@ Pada versi yang dibuat saat ini, data berita masih disimpan menggunakan `localSt
 
 Selain itu, kolom nama file gambar masih berupa input teks dan belum memiliki fungsi untuk mengunggah serta menampilkan gambar. Oleh karena itu, website ini masih merupakan implementasi awal yang berfokus pada tampilan, navigasi, validasi formulir, dan penyimpanan berita secara lokal.
 
-## 8. Penutup
+## 8. Kesesuaian dengan Tugas UTS
+
+| Ketentuan UTS | Implementasi pada Proyek | Keterangan |
+|---|---|---|
+| 2.a Homepage, responsif, HTML/CSS/JS | `index.html`, `assets/css/style.css`, `assets/js/main.js` | Ada |
+| 2.a Navigasi AJAX | `assets/js/main.js`, menggunakan AJAX jQuery untuk memuat halaman dari folder `pages` | Ada |
+| 2.b Minimal 1 halaman konten interaktif | `pages/berita.html`, tombol untuk melihat detail berita | Ada |
+| 2.c Form dan validasi JavaScript | `pages/tambah-berita.html` dan validasi pada `assets/js/main.js` | Ada |
+| 2.c Submit ke server HTTP | Penyimpanan berita menggunakan `localStorage` | Belum terpenuhi karena backend/server belum dibuat |
+| 2.d Individu, pekerjaan tidak sama | Fokus proyek pada sistem informasi sekolah, khususnya informasi dan berita sekolah | Sesuaikan dengan pembagian pekerjaan kelompok |
+| 2.e README | `README.md` | Ada |
+| Larangan Bootstrap dari dosen | Menggunakan CSS sendiri pada `assets/css/style.css` | Tidak menggunakan Bootstrap |
+
+## 9. Penutup
 
 Melalui pengerjaan proyek ini, saya menerapkan beberapa konsep dasar Pemrograman Web, mulai dari menyusun struktur HTML, mengatur tampilan dengan CSS, hingga menambahkan interaksi menggunakan JavaScript dan jQuery. Saya juga mempelajari penggunaan AJAX untuk memuat konten halaman serta `localStorage` untuk menyimpan data berita pada browser.
 
