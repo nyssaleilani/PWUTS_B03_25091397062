@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistem Informasi SD Islam Al-Hikmah</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="logo" aria-label="Logo SD Islam Al-Hikmah">
+            <svg viewBox="0 0 100 100" role="img" aria-label="Logo Islami">
+                <path d="M50 5 L88 30 V65 Q88 84 50 96 Q12 84 12 65 V30 Z"
+                      fill="#087443"/>
+                <path d="M50 15 L78 34 V64 Q78 79 50 88 Q22 79 22 64 V34 Z"
+                      fill="#ffffff"/>
+                <path d="M31 62 V47 Q31 39 40 39 Q49 39 49 47 V62 Z"
+                      fill="#087443"/>
+                <path d="M51 62 V42 Q51 32 61 32 Q71 32 71 42 V62 Z"
+                      fill="#087443"/>
+                <path d="M42 62 V53 Q42 46 50 46 Q58 46 58 53 V62 Z"
+                      fill="#ffffff"/>
+                <path d="M29 66 H73 L64 76 H38 Z" fill="#087443"/>
+                <path d="M36 78 Q50 71 64 78 V83 Q50 77 36 83 Z"
+                      fill="#087443"/>
+                <path d="M46 25 Q50 18 55 25 Q52 32 46 25 Z"
+                      fill="#087443"/>
+            </svg>
+        </span>
+        <span>
+            <strong>SD Islam Al-Hikmah</strong>
+            <small>Sistem Informasi Sekolah</small>
+        </span>
+    </a>
+
+    <button id="menuToggle" class="menu-toggle" aria-label="Buka menu">☰</button>
+
+    <nav id="mainNav">
+        <a href="index.html" data-page="home" class="nav-link active">Beranda</a>
+        <a href="pages/berita.html" data-page="berita" class="nav-link">Berita Sekolah</a>
+        <a href="pages/tambah-berita.html" data-page="tambah-berita" class="nav-link">Tambah Berita</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="eyebrow">Selamat Datang</p>
+
+            <h1>
+                Pusat Informasi<br>
+                <span>SD Islam Al-Hikmah</span>
+            </h1>
+
+            <p>Temukan kabar, kegiatan, dan informasi dari lingkungan sekolah.</p>
+
+            <a class="button" href="pages/berita.html" data-page="berita">
+                Lihat Berita →
+            </a>
+        </div>
+
+        <div class="hero-art" aria-label="Logo Islami SD Islam Al-Hikmah">
+            <svg viewBox="0 0 240 240" role="img" aria-label="Masjid dan Al-Qur'an">
+                <path d="M120 12 L190 62 V145 Q190 177 120 208 Q50 177 50 145 V62 Z"
+                      fill="#087443"/>
+                <path d="M120 28 L175 68 V143 Q175 166 120 191 Q65 166 65 143 V68 Z"
+                      fill="#ffffff"/>
+                <path d="M77 143 V104 Q77 83 99 83 Q121 83 121 104 V143 Z"
+                      fill="#087443"/>
+                <path d="M119 143 V91 Q119 67 141 67 Q163 67 163 91 V143 Z"
+                      fill="#087443"/>
+                <path d="M104 143 V112 Q104 98 120 98 Q136 98 136 112 V143 Z"
+                      fill="#ffffff"/>
+                <path d="M72 151 H168 L151 169 H89 Z" fill="#087443"/>
+                <path d="M84 176 Q120 157 156 176 V190 Q120 173 84 190 Z"
+                      fill="#087443"/>
+                <path d="M115 52 Q120 40 130 49 Q126 60 115 52 Z"
+                      fill="#087443"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="eyebrow">Informasi Sekolah</p>
+        <h2>Jelajahi Website</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>📰 Berita Sekolah</h3>
+                <p>Informasi kegiatan dan kabar sekolah.</p>
+                <a href="pages/berita.html" data-page="berita">Baca berita →</a>
+            </article>
+
+            <article class="card">
+                <h3>✍️ Tambah Berita</h3>
+                <p>Form berita dengan validasi JavaScript/jQuery.</p>
+                <a href="pages/tambah-berita.html" data-page="tambah-berita">
+                    Buka formulir →
+                </a>
+            </article>
+
+            <article class="card">
+                <h3>🎓 Profil Sekolah</h3>
+                <p>Pusat informasi SD Islam Al-Hikmah.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="pageContent" class="section ajax-content" aria-live="polite"></section>
+</main>
+
+<footer>
+    <strong>SD Islam Al-Hikmah</strong>
+    <span>Website tugas UTS Pemrograman Web</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
